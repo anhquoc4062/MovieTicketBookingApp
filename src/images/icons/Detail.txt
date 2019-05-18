@@ -1,0 +1,89 @@
+import React, {Component} from 'react';
+import {StyleSheet, Text, View, ScrollView, Image, Dimensions, TouchableOpacity} from 'react-native';
+
+export default class App extends Component {
+  render() {
+    return (     
+        <View style={styles.container}>
+          <ScrollView contentContainerStyle={{paddingVertical: 20}}>
+            <View>
+            </View>
+            <View style={styles.line}></View>
+            <View style={{flexDirection: 'row'}}>
+              <Image style={{  margin: 20, width: 140, height: 200}} source={require('./app/img/alita.jpg')}/>
+              <View style={styles.txtContainer}>
+                <Text style={styles.txtFont2}><Text style={styles.txtFont3}>Th?i lu?ng:</Text> 130 phút</Text>
+                <Text style={styles.txtFont2}><Text style={styles.txtFont3}>Ð?o di?n:</Text> James Wang</Text>
+                <Text style={styles.txtFont2}><Text style={styles.txtFont3}>Ngôn ng?:</Text> Ti?ng Anh</Text>
+                <Text style={styles.txtFont2}><Text style={styles.txtFont3}>Kh?i chi?u:</Text> 28/2/2019</Text>
+              </View>
+            </View>
+            <View style={styles.line}></View>
+            <View>
+              <Text style={{ color: '#F95860', fontSize: 18, fontWeight: 'bold', margin: 20,}}>MÔ T? PHIM</Text>
+              <Text style={{color: '#C2C1C5', margin: 20,}}>
+              Alita du?c ví nhu m?t th?n ch?t d?n t? d?a ng?c vì nh?ng kh? nang vu?t qua m?i 
+              gi?i h?n mà cô s? h?u. Cô du?c tìm th?y b?i Ti?n si Ido và không th? nh? mình là ai hay t? dâu t?i. 
+              Ð? có th? tìm ra s? th?t, Atila ph?i d?n thân vào nh?ng cu?c chi?n d?u n?y l?a.
+              Ch? dài xíu d? kéo th? coi du?c chua thôi
+              Ch? dài xíu d? kéo th? coi du?c chua thôi 
+              Ch? dài xíu d? kéo th? coi du?c chua thôi 
+              Ch? dài xíu d? kéo th? coi du?c chua thôi 
+              Ch? dài xíu d? kéo th? coi du?c chua thôi 
+              Ch? dài xíu d? kéo th? coi du?c chua thôi 
+              Ch? dài xíu d? kéo th? coi du?c chua thôi 
+              Ch? dài xíu d? kéo th? coi du?c chua thôi
+              Ch? dài xíu d? kéo th? coi du?c chua thôi 
+              Ch? dài xíu d? kéo th? coi du?c chua thôi 
+              Ch? dài xíu d? kéo th? coi du?c chua thôi 
+              Ch? dài xíu d? kéo th? coi du?c chua thôi 
+              Ch? dài xíu d? kéo th? coi du?c chua thôi 
+              Ch? dài xíu d? kéo th? coi du?c chua thôi 
+              Ch? dài xíu d? kéo th? coi du?c chua thôi OK
+              </Text>
+            </View>
+          </ScrollView>
+          <TouchableOpacity style={styles.boxButton}>
+              <Text style={{color: '#C2C1C5', fontWeight: 'bold',fontSize: 18}}>Ð?T VÉ</Text>
+          </TouchableOpacity>
+        </View>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#1d1d27',
+    flexDirection: 'column',
+  },
+  boxButton: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 15,
+    backgroundColor: '#F95860',
+  },
+  txtFont2: {
+    color: '#C2C1C5',
+    fontSize: 15,
+    fontWeight: 'bold'
+  },
+  txtFont3: {
+    color: '#F95860',
+    fontSize: 15,
+    fontWeight: 'bold',
+  },
+  txtContainer: {
+    flexDirection: 'column',
+    marginTop: 15,
+    height: Dimensions.get("window").height/4,
+    justifyContent: 'space-around'
+  },
+  line: {
+    borderColor: '#fff',
+    borderTopWidth: 1,
+    marginLeft: 20,
+    marginRight: 20,
+    margin: 10
+  }
+});
